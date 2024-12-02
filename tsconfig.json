@@ -1,11 +1,14 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "lib": ["dom", "es6"],
-      "outDir": "./dist",
-      "strict": true
-    },
-    "include": ["src/**/*"]
-  }
-  
+  "compilerOptions": {
+    "target": "ES2016",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["chrome", "node"] // Add 'node' here to recognize process.env
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
