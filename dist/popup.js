@@ -1,0 +1,1 @@
+(()=>{"use strict";var e;null===(e=document.getElementById("savePrefix"))||void 0===e||e.addEventListener("click",(function(){console.log("Save button clicked.");var e=document.getElementById("prefix").value;e?chrome.storage.local.set({profilePrefix:e},(function(){console.log("Prefix saved:",e),window.close()})):console.log("No prefix entered.")}))})();
